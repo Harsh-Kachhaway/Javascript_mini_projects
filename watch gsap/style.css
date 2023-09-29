@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: gilroy-black;
+}
+body{
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    height: 100vh;
+    width: 100vw;
+}
+nav{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items:end;
+    justify-content: space-around;
+    font-size: 1.3rem;
+}
+.nevleft{
+    width: 40%;
+    /* text-align: center; */
+    margin-left: 100px;
+
+}
+.nevmiddle{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+#bar{
+    height: ;
+}
+.nevmiddle div{
+    margin-inline: 20px;
+
+}
+.nevright{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nevright i{
+    font-size: 1.5rem;
+    font-weight:bolder;
+    
+}
+.search{
+    margin-inline: 20px;
+}
+.nevselect .bar{
+    height: 2px;
+    width: auto;
+    margin: 0;
+    background: transparent;
+    border-radius: 50%;
+    
+}
+.nevselect:hover .bar{
+    background-color: white;
+
+}
+.container{
+    margin-top:100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+.image{
+    height: 80vh;
+    width: auto;
+    position: relative;
+}
+.colorstrip{
+    /* background: white; */
+    width: 7vw;
+    height: 100vh;
+    position: absolute;
+    top:-150px;
+    left: 355px;
+    z-index: 1;
+    display: flex;
+    
+}
+#red{
+    width: 30%;
+    background: red;
+    height: 100%;
+}
+#transperent{
+    width: 30%;
+    background: rgba(246, 246, 246, 0.837);
+    height: 100%;
+}
+#blue{
+    width: 40%;
+    background: rgb(7, 7, 154);
+    height: 100%;
+}
+img{
+    height: 80vh;
+    z-index: 2;
+    /* width: 40%; */
+    margin-left: 250px;
+    margin-right: 50px;
+    position: relative;
+}
+.middle{
+    width: 50%;
+}
+.middle h2{
+    font-size: 3rem;
+    font-family: gilroy-thin;
+}
+.middle h1{
+    font-size: 8rem;
+    margin-top: -30px;
+}
+button{
+    padding: 10px;
+    font-size: 1.5rem;
+    background-color: red;
+    outline: red;
+    border: red;
+    border-radius: 10px;
+}
+
+.iconcontainer{
+    display: flex;
+    align-items: end;
+    height: 70vh;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-inline: 40px;
+    margin-bottom: 50px ;
+}
+.icon i {
+    font-size: 2rem;
+    margin-block:15px ;
+}
+

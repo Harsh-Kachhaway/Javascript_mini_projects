@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.div1{
+    height: 100vh;
+    width: 100vw;
+    background: pink;
+}
+.div2{
+    height: 100vh;
+    width: 100vw;
+    background: pink;
+}
+.div3{
+    height: 100vh;
+    width: 100vw;
+    background: black;
+}
+#box{
+    height: 100px;
+    width: 100px;
+    background: blue;
+}
+#box2{
+    height: 100px;
+    width: 100px;
+    background: green;
+}
+.red{
+    background-color: red !important;
+}
