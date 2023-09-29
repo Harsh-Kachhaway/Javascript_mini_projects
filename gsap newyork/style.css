@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(117, 184, 142);
+    font-family: gilroy-bold;
+    font-size: 1.3rem;
+}
+nav{
+    height: 70px;
+    margin-inline:100px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.rightnav{
+    font-size: 1.7rem;
+}
+.ic{
+    margin: 5px;
+}
+.ice{
+    font-size: 2.5rem;
+    margin-block: 10px;
+}
+.container{
+    height: 90%;
+    width: 100%;
+    display: flex;
+}
+.containerone{
+    width: 90%;
+    height: 100%;
+    margin-left: 50px;
+}
+.containerone .uper{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.containerone .down{
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    font-family: gilroy-light;
+    font-size: 1rem;
+}
+.even{
+   height: 80%;
+   width: 20%;
+   background: blue;
+   margin: 5px;
+}
+.odd{
+    height: 60%;
+    width: 20%;
+    background: red;
+    margin: 5px;
+
+}
+.head{
+    position: absolute;
+    color: whitesmoke;
+    font-family: gilroy-medium;
+    font-size: 15rem;
+    /* top: 50%;
+    left: 50%; */
+}
+img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    top:10px;
+    /* scale: 1.2; */
+    /* object-position: 0 10px ; */
+    
+}
+.im{
+    /* overflow: hidden; */
+}
+.containertwo{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;
+    margin-block: 50px;
+    height: 80%;
+    width: 10%;
+}
