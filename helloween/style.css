@@ -1,0 +1,540 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #191010;
+  position: relative;
+  overflow-x: hidden;
+  cursor: none;
+}
+.mouse{
+    width: 100px;
+    height: 100px;
+    /* background-color: yellow; */
+    background-image: url(./img/stick.png);
+    background-size: 100% 100%;
+    z-index: 10;
+    pointer-events: none;
+    position: fixed;
+    top:20px;
+    left:100px;
+}
+.star{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+.sone{
+    top:-5px;
+    left: -5px;
+    transform: scale(1.3);
+    transform: rotateX(20deg);
+    visibility: hidden;
+}
+.stwo{
+    top:-7px;
+    left: 6px;
+    transform: scale(1.1);
+    transform: rotateX(60deg);
+    visibility: hidden;
+}
+.sthree{
+    top:6px;
+    left: 5px;
+    transform: scale(1.4);
+    transform: rotateX(270deg);
+    visibility: hidden;
+}
+.sfour{
+    top:5px;
+    left:5px;
+    transform: scale(0.9);
+    transform: rotateX(90deg);
+    visibility: hidden;
+}
+.sfive{
+    top:5px;
+    left:5px;
+    transform: scale(0.8);
+    transform: rotateX(180deg);
+    visibility: hidden;
+}
+
+
+.section {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.moon {
+  background-color: white;
+  width: 45.375rem;
+  height: 45.375rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -10%;
+  left: 15%;
+  z-index: -100;
+}
+
+.imp {
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.background {
+  width: 80.6875rem;
+  height: 25.4375rem;
+  /* background-color: white; */
+  background-image: url(./img/Lcd5aorri.png);
+  background-repeat: no-repeat;
+  background-clip: lightgray 50%;
+  position: absolute;
+  bottom: 0;
+  z-index: -99;
+}
+
+.clif {
+  width: 75.0625rem;
+  height: 30.3125rem;
+  flex-shrink: 0;
+  background-image: url(./img/Daco_4182779.png);
+  bottom: 0;
+  left: -25%;
+  z-index: -98;
+}
+
+.trees {
+  width: auto;
+  height: auto;
+  bottom: 12%;
+  left: 37%;
+  z-index: -97;
+}
+
+.tree {
+  width: 23.4375rem;
+  height: 25.75rem;
+  flex-shrink: 0;
+  /* background-image: url(./img/trees.png); */
+  /* top:50%;
+    left:50%; */
+  object-fit: fill;
+}
+
+.clif2 {
+  width: 47.4375rem;
+  height: 18.3125rem;
+  flex-shrink: 0;
+  background-image: url(./img/clif2.png);
+  bottom: -20%;
+  right: 35%;
+  z-index: -96;
+}
+
+.castle {
+  width: auto;
+  height: auto;
+  flex-shrink: 0;
+  bottom: -20%;
+  right: -10%;
+  z-index: -95;
+  /* background-image: url(./img/castle.png); */
+}
+
+.castlein {
+  object-fit: fill;
+  width: 59.75rem;
+  height: 56.3125rem;
+}
+
+.witch {
+  width: auto;
+  height: auto;
+  background-image: url(./img/pngwing.com.png);
+  top: 10%;
+  left: -11%;
+}
+
+.witches {
+  width: 10rem;
+  height: 7rem;
+}
+
+.headline {
+  width: auto;
+  width: auto;
+  font-size: 80px;
+  color: #d46a00;
+  font-family: "halloween morning";
+  width: 40%;
+  text-align: center;
+  left: 19%;
+  top: 9%;
+  z-index: -99;
+  line-height: 0.8;
+  position: relative;
+  border-radius: 20% 20% 0 0;
+  overflow: hidden;
+}
+
+.strep {
+  position: absolute;
+  /* background-color: rgb(255, 255, 255); */
+  background: linear-gradient(270deg, #fff 77.04%, rgba(255, 255, 255, 0) 100%);
+  z-index: 2;
+  width: 200%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+}
+
+.sectiontwo {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #f00 0%, #d26b03 56.25%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.blank{
+    width: 100vw;
+    height: 50vh;
+    position: absolute;
+    background-color: #040000;
+    z-index: 2;
+    top:0;
+    color: white;
+    font-size: 50vh;
+}
+
+.imgs {
+  width: 8.6875rem;
+  height: 8.6875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  z-index: 1;
+}
+
+#imgpum {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.shadow {
+  width: 10.5rem;
+  height: 0.8rem;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(23, 21, 5, 0.56) 5.73%,
+    rgba(23, 5, 5, 0) 81.77%
+  );
+  text-align: center;
+}
+
+.hone {
+  width: auto;
+  height: 25rem;
+}
+
+.headoffer {
+  color: #ff8000;
+  text-align: center;
+  font-family: Halloween Morning;
+  font-size: 21.8125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  line-height: 0.7;
+}
+
+.headspecial {
+  color: #fff;
+  text-align: center;
+  font-family: Midnight Minutes;
+  font-size: 10rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.83563rem;
+  line-height: 0.01;
+}
+
+.offerbtn {
+    width: 200px;
+    height: 55px;
+    color: #d16a03;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    border-radius: 4rem;
+    background: #fff;
+    cursor: none;
+}
+/* .offerbtn:hover{
+    cursor: none;
+
+} */
+
+
+.sectionthree {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(180deg, #d26b03 0%, #120e0e 79.06%);
+  overflow: hidden;
+}
+
+.headthree {
+  color: #fff;
+  text-align: center;
+  font-family: Halloween Morning;
+  font-size: 4.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* margin-bottom: 30px; */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 90vw;
+  height: 75vh;
+  /* margin: auto; */
+  column-gap: 10px;
+  row-gap: 10px;
+  /* overflow: hidden; */
+  margin: auto;
+}
+
+.grids {
+  margin: auto;
+  width: 96%;
+  height: 95%;
+  background-color: #7e7770;
+  border-radius: 2rem;
+  border: 4px solid #fff;
+  background: rgba(0, 0, 0, 0.35);
+  position: relative;
+}
+
+.gridhead {
+  color: #ff8000;
+  /* text-align: center; */
+  margin-left: 20px;
+  font-family: Halloween Morning;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.rip {
+  color: rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-family: Haettenschweiler;
+  font-size: 14.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.04563rem;
+  position: absolute;
+  left: 25%;
+}
+
+.word {
+  color: #fff;
+  /* text-align: center; */
+  font-family: Henny Penny;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 40px;
+}
+
+.price {
+  color: #fff;
+  /* text-align: center; */
+  font-family: Henny Penny;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 40px;
+}
+
+.box {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sectionfour {
+  height: 100vh;
+  width: 100vw;
+  background: #120e0e;
+  position: relative;
+  overflow: hidden;
+  position: relative;
+}
+
+.png {
+  height: 100%;
+  width: 100%;
+  transform: scale(1.2);
+  background-image: url(./img/favpng_halloween-costume-october-31-all-saints-day-clip-art.png);
+  bottom: 0;
+  left: -10%;
+}
+
+.tom {
+  background-image: url(./img/Rectangle\ 4.png);
+  width: 19.125rem;
+  height: 31.625rem;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 30%;
+  right: 55%;
+  transform: scale(0.9);
+}
+
+.tomone {
+  background-image: url(./img/tom1.png);
+  width: 19.6875rem;
+  height: 29.8125rem;
+  flex-shrink: 0;
+  position: absolute;
+  top: 30%;
+  right: 30%;
+  transform: scale(0.9);
+}
+
+.ordersingle {
+  color: #fff;
+  text-align: center;
+  font-family: Halloween Morning;
+  font-size: 2.5625rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.07688rem;
+  background-color: #120e0e;
+  width: 13.3125rem;
+  height: 3.75rem;
+  flex-shrink: 0;
+  border-radius: 1.25rem;
+  border: 2px solid #fff;
+  background: #040000;
+}
+
+.tom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.tomone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.tic {
+  color: #fff;
+  text-align: center;
+  font-family: Midnight Minutes;
+  font-size: 2.4375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.values {
+  color: #ff8000;
+  text-align: center;
+  font-family: Midnight Minutes;
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: Henny Penny;
+}
+
+.moontwo {
+  width: 54.25rem;
+  height: 54.25rem;
+  flex-shrink: 0;
+  border-radius: 54.25rem;
+  background: #d9d9d9;
+  left: 20%;
+  top: 10%;
+  transform: scale(0.8);
+}
+
+.moonflar {
+  width: 60.75rem;
+  height: 60.75rem;
+  flex-shrink: 0;
+  border-radius: 60.75rem;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #b3a4a4 60.94%,
+    rgba(179, 164, 164, 0) 100%
+  );
+  left: 16.5%;
+  top: 0%;
+  transform: scale(0.77);
+}
+
+.headings {
+  z-index: 1;
+  position: relative;
+  /* margin-top: 30px; */
+}
+
+.subhead {
+  color: #fff;
+  text-align: center;
+  font-family: Ingrid Darling;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.headin {
+  color: #ff8000;
+  text-align: center;
+  font-family: Midnight Minutes;
+  font-size: 6.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  z-index: 1;
+}

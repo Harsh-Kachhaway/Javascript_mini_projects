@@ -15,8 +15,24 @@ body{
     background-position: center;
     /* position: absolute; */
 }
+.curve{
+    aspect-ratio: 2/1;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* position: absolute; */
+}
+.curvee{
+    aspect-ratio: 900/600;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* position: absolute; */
+}
 .firstcurve{
-    background-image: url(./layered-waves-haikei.svg);
+    background-image: url(./nasa-pd4lo70LdbI-unsplash2.png);
     justify-self: flex-start;
     
 }
@@ -35,8 +51,45 @@ body{
 .three{
     background-image: url(./layered-waves-haikei\(2\).svg);
 }
+.sectiontwo{
+   background-image: url(./stacked-peaks-haikei.svg);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-direction: column;
+}
 .four{
-    height: 100%;
+    background-image: url(./layered-peaks-haikei.svg);
+}
+.sectionthree{
+   background-image: url(./stacked-waves-haikei.svg);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-direction: column;
+}
+.sectionthreetwo{
+   background-image: url(./stacked-waves-haikei.svg);
+   background-image: url(./circle-scatter-haikei.svg);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-direction: column;
+}
+
+.five{
+    background-image: url(./layered-waves-haikei\(4\).svg);
+}
+.six{
+   background-image: url(./watertwo.svg);
+}
+.seven{
+   background-image: url(./under1.svg);
+}
+.h1{
+    color: #ffffff;
+    font-size: 120px;
+    text-align: center;
 }
 h1{
     color: #ffffff;
@@ -44,4 +97,32 @@ h1{
 }
 .des{
     width: 100%;
+}
+.sectionfour{
+    background-image: url(./earthlayers/blob-haikei\(6\).svg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lone{
+    background-image: url(./earthlayers/blob-haikei\(5\).svg);
+
+}
+.ltwo{
+    background-image: url(./earthlayers/blob-haikei\(4\).svg);
+
+}
+.lthree{
+    background-image: url(./earthlayers/blob-haikei\(3\).svg); 
+}
+.lfour{
+    background-image: url(./earthlayers/blob-haikei\(2\).svg); 
+}
+.lfive{
+    background-image: url(./earthlayers/blob-haikei\(1\).svg); 
+}
+.lsix{
+    background-image: url(./earthlayers/blob-haikei.svg)
 }

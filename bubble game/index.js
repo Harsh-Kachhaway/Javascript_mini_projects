@@ -3,7 +3,7 @@ let buble = document.getElementById("buble");
 let value;
 let hit = document.getElementById("hit");
 let timer = document.getElementById("timer");
-let time = 2;
+let time = 30;
 let score = 0;
 let scoreincrese = document.getElementById("score")
 let hitvalue = 0;

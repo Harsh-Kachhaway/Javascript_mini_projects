@@ -1,0 +1,797 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 600vh;
+    width: 100vw;
+    background: linear-gradient(180deg, rgba(255, 0, 0, 0.42) -3.03%, rgba(213, 26, 247, 0.41) 34.96%, rgba(255, 255, 0, 0.41) 70.38%, rgba(0, 0, 255, 0.40) 100%);
+    display: flex;
+    flex-direction: column;
+    cursor: none;
+}
+
+.main{
+    width: 100vw;
+    height: fit-content;
+}
+.mouse{
+    width: 250px;
+    height: 250px;
+    /* background-color: yellow; */
+    background-image: url(./img/sparkler.png);
+    background-size: 100% 100%;
+    z-index: 10;
+    pointer-events: none;
+    position: fixed;
+    top:20px;
+    left:100px;
+}
+.spark{
+    --tope: -25%;
+    --lefte: -25%;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top:var(--tope);
+    left:var(--lefte);
+
+}
+.spark img{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.fire , .firetwo , .firethree{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    /* opacity: 0; */
+}
+.fire img , .firetwo img , .firethree img{
+    opacity: 0;
+    transform: scale(0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-position: center;
+    object-fit:scale-down;
+}
+nav {
+    position: fixed;
+    z-index: 100;
+    /* width: 100vw; */
+    /* height: 100vh; */
+
+
+}
+
+.heading {
+    color: #000;
+    font-family: Impact;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 92.973%;
+    /* 4.18375rem */
+    letter-spacing: 0.18rem;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    width: 5.5rem;
+}
+
+.blackhead {
+    width: 6rem;
+    height: 5rem;
+    flex-shrink: 0;
+    background: rgba(0, 0, 0);
+    position: absolute;
+
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-shrink: 0;
+    background: white;
+}
+
+.blackout {
+    position: relative;
+    width: 22.5625rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.blackstrip {
+    width: 22.5625rem;
+    height: 5rem;
+    flex-shrink: 0;
+    background: rgb(0, 0, 0);
+    position: absolute;
+}
+.lighting{
+    position: fixed;
+    top:0;
+    right: 0;
+    z-index: 5;
+}
+.diya{
+    position: fixed;
+    bottom:-1%;
+    right: 0;
+    z-index: 5;
+    
+}
+.rangoli{
+    position: fixed;
+    bottom:-1%;
+    left: 0;
+    z-index: 5;
+
+}
+
+.greeating {
+    color: #000;
+    font-family: Impact;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 92.973%;
+    /* 4.18375rem */
+    letter-spacing: 0.18rem;
+}
+
+.sectiontwo {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.vid {
+    width: 100%;
+    height: 160%;
+    position: absolute;
+    z-index: -1;
+}
+
+.in-sectiontwo {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.sub-box {
+    display: flex;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+.sub-greeating-two {
+    position: relative;
+    overflow: hidden;
+    height: 6.35rem;
+}
+
+.sub-greeating-two h1 {
+    color: #ffffff;
+    text-align: center;
+    font-family: Itim;
+    font-size: 6.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 92.973%;
+    /* 5.81081rem */
+    letter-spacing: 0.25rem;
+    margin-inline: 20px;
+}
+
+.head-happy h1 {
+    color: #ffffff;
+    text-align: center;
+    font-family: Joti One;
+    font-size: 11.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 92.973%;
+    /* 13.42294rem */
+    letter-spacing: 0.5775rem;
+}
+
+.head-happy {
+    position: absolute;
+    top: 37%;
+    left: 10%;
+    overflow: hidden;
+
+}
+
+.head-diwali h1 {
+    color: #ffffff;
+    text-align: center;
+    font-family: Joti One;
+    font-size: 11.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 92.973%;
+    /* 13.42294rem */
+    letter-spacing: 0.5775rem;
+}
+
+.head-diwali {
+    position: absolute;
+    top: 57%;
+    left: 10%;
+    overflow: hidden;
+
+}
+
+.scrole {
+    position: absolute;
+    left: 27%;
+    top: 83%;
+}
+
+.scrole h1 {
+    color: #13963f;
+    text-align: center;
+    font-family: Joti One;
+    font-size: 1.4375rem;
+}
+
+.sectionthree {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+
+.strip {
+    width: 100vw;
+    height: 100px;
+    border-block: 5px solid #9B7373;
+    margin-top: 30px;
+    background-color: #E1CECE;
+    display: flex;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.striptwo {
+    width: fit-content;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.elem {
+    height: 100px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.striptwo .elem img {
+    height: 100px;
+    width: fit-content;
+    margin-right: 20px;
+
+}
+
+.cross {
+    margin-top: 30px;
+    position: relative;
+    height: fit-content;
+    width: 100vw;
+
+}
+
+.line {
+    width: 100vw;
+    height: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 47%
+}
+
+.cross h1 {
+    color: #ffffff;
+    font-family: Impact;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 92.973%;
+    /* 4.18375rem */
+    letter-spacing: 0.18rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.banner {
+    width: 100vw;
+    height: 18.875rem;
+    flex-shrink: 0;
+    display: flex;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.bannerone {
+    width: 50%;
+    /* height: 18.6875rem; */
+    flex-shrink: 0;
+    background: url(./categori/long3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bannertwo {
+    width: 50%;
+    /* height: 18.6875rem; */
+    flex-shrink: 0;
+    background: url(./categori/long2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.category{
+    margin-top: 20px;
+    width: 100vw;
+    height: 35rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+    /* background-color: cadetblue; */
+}
+.category h1{
+    margin: 10px;
+    color: #ffffff;
+    font-family: Impact;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 92.973%;
+    /* 4.18375rem */
+    letter-spacing: 0.18rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    flex-shrink: 0;
+}
+.category-strip{
+    height: fit-content;
+    width: 100vw;
+    overflow: scroll;
+    display: flex;
+    /* border: 4px solid red; */
+}
+.category-striptwo{
+    display: flex;
+    height: fit-content;
+    width:fit-content;
+    flex-direction: row;
+
+}
+.cat-box{
+    /* background: #D9D9D9; */
+    width: 19rem;
+    height: 29.5rem;
+    border-radius:  .4rem;
+    overflow: hidden;
+    margin-inline: 10px;
+    position: relative;
+
+}
+.images-cat{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    
+}
+
+.images-cat img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: 1s;
+
+}
+/* .cat-box img:hover{
+    transform: scale(1.2);
+} */
+.cat-down{
+    position: absolute;
+    z-index: 100;
+    bottom:15%;
+    right: 15%;
+}
+.cat-down h1{
+    margin: 0;
+    font-size: 2rem;
+
+}
+.sectionfour{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rebeccapurple; */
+}
+.bestseller{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.bestseller h1{
+    margin: 20px;
+    color: #ffffff;
+    font-family: Impact;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 92.973%;
+    /* 4.18375rem */
+    letter-spacing: 0.18rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    flex-shrink: 0;
+}
+.best-strip{
+    height: fit-content;
+    width: 85vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+.best-box{
+    height:35rem;
+    background-color: red;
+    width: 23%;
+    /* border-radius: 1rem; */
+    position: relative;
+    overflow: hidden;
+    font-family: 'gilroy-medium';
+}
+.best-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: 400ms;
+}
+/* .best-box img:hover{
+    transform: scale(1.2);
+} */
+#imgoneone,#imgtwoone,#imgthreeone,#imgfourone{
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+}
+.best-content{
+    position: absolute;
+    z-index: 3;
+    background-color: #F6B8F8;
+    background: linear-gradient(180deg, #C6C6D1 0%, #BCBCDB 100%);
+    bottom: -10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.best-content h1{
+    margin-top: 10px;
+    font-size: 20px;
+    width: 90%;
+    margin-left: 5%;
+    color: #ffffff;
+}
+.best-content h2 {
+    width: 90%;
+    margin-left: 5%;
+    color: #ffffff;
+    color: #ffffff;
+    font-size: 25px;
+    
+}
+.non{
+    color: #948a8a;
+    font-size: 20px;
+    text-decoration: 2px  line-through;
+
+}
+.btn{
+    height: 50px;
+    width: 120px;
+    outline: none;
+    background:none;
+    border: 3px solid red;
+    margin-top: 20px;
+    font-family: "gilroy-medium";
+    font-size: 20px;
+    font-weight: bolder;
+    color: red;
+
+}
+.sectionfive{
+    height: 100vh;
+    width: 100vw;
+}
+
+.festivel{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.festivel h1{
+    margin: 20px;
+    color: #ffffff;
+    font-family: Impact;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 92.973%;
+    /* 4.18375rem */
+    letter-spacing: 0.18rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    flex-shrink: 0;
+}
+.fest-strip{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+.fest-strip-two{
+    height: fit-content;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.fest-box{
+    height:35rem;
+    background-color: red;
+    width: 23%;
+    /* border-radius: 1rem; */
+    position: relative;
+    overflow: hidden;
+    font-family: 'gilroy-medium';
+}
+.fest-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    transition: 400ms;
+}
+.fest-box img:hover{
+    scale: 1.5;
+}
+.fest-content{
+    position: absolute;
+    z-index: 3;
+    background-color: #F6B8F8;
+    background: linear-gradient(180deg, #C6C6D1 0%, #BCBCDB 100%);
+    bottom: -10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.fest-content h1{
+    height: 6vh;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 20px;
+    width: 90%;
+    margin-left: 5%;
+    color: #ffffff;
+}
+.fest-content h2 {
+    width: 90%;
+    margin-left: 5%;
+    color: #ffffff;
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    
+}
+.sectionsix{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 90vw;
+    height: 90vh;
+    /* background-color: red; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    overflow: hidden;
+    position: relative;
+    border-radius: 1rem;
+}
+.bigbox{
+    width: 180vw;
+    height: 180vh;
+    /* background: url(./categori/500195-colorful-diwali-diya-background-image.jpg); */
+    flex-shrink: 0;
+    position: relative;
+    transition: 3s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+    
+}
+.bigbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: blur(5px); 
+}
+.inbox{
+    position:absolute;
+    height: 35rem;
+    width: 23vw;
+    /* background: orange; */
+    border-radius: 1rem;
+    z-index: 5;
+    filter: none;
+    overflow: hidden;
+
+}
+.inbox img{
+    filter: none;
+    opacity: 0;
+    transition: 1s;
+}
+.inbox img:hover{
+
+    opacity: 1;
+}
+
+/* .bigbox:hover{
+    transform: translateX(50%);
+} */
+#inone{
+    top:10%;
+    right:43%;
+    background-color: white;
+}
+#intwo{
+    top:37%;
+    right:26%;
+    background-color: black;
+    
+}
+#inthree{
+    top:52%;
+    right:59%;
+    background-color: yellow;
+    
+}
+#infour{
+    top:0%;
+    right:58%;
+    background-color: teal;
+    
+}
+#infive{
+    top:21%;
+    right:10%;
+    background-color: aqua;
+    
+}
+
+#insix{
+    top:56%;
+    right:76%;
+    background-color: red;
+}
+#inseven{
+    top:64%;
+    right:40%;
+    background-color: rebeccapurple;
+    
+}
+#ineight{
+    top:-7%;
+    right:76%;
+    background-color: skyblue;
+    
+    
+}
+#innine{
+    top:72%;
+    right:6%;
+    background-color: navajowhite;
+    
+}
+#inten{
+    top:-18%;
+    right:29%;
+    background-color: mediumpurple;
+
+}
+.box h1{
+    margin: 20px;
+    color: #38ff00;
+    font-family: Impact;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 92.973%;
+    /* 4.18375rem */
+    letter-spacing: 0.18rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    flex-shrink: 0;
+    position: absolute;
+    top: 45%;
+    right: 22%;
+    z-index: 4;
+}
+.cat-head , .best-head ,.fest-head{
+    display: flex;
+}
+.category .cat-head span , .best-head span , .fest-head span{
+    height: 3.5rem;
+    width: 3.5rem;
+    /* background-color: red; */
+    display: inline-block;
+    background-image: url(./categori/Diya\ 1.png);
+    background-size: cover;
+}
+.sectiondontknow{
+    width: 100vw;
+    height: fit-content;
+
+}
+.sectiondontknow img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    align-items: center;
+    position: relative;
+    bottom: -10%;
+}
